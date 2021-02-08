@@ -585,16 +585,7 @@ class ClientNode:
                 total_size += sent
 
 
-if __name__ == "__main__":
-    #cleanup from previous boot
-    #logging.basicConfig(filename='node.log', level=logging.DEBUG)
-
-    # Figure this out later - manual delete for
-    #if(len(CLIENT_DIR) > 10 and CLIENT_DIR[9] != 1):
-    #    if(os.path.isdir(CLIENT_DIR)):
-    #        shutil.rmtree(CLIENT_DIR)
-    #hardcoding port generation - could read from file but its easier doing this
-    
+if __name__ == "__main__":    
     if sys.argv[1] is None:
         print('Error: please enter client number as argument')
         exit(0)
